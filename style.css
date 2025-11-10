@@ -1,7 +1,102 @@
-h1 {
+body {
+    background: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 320px;
     text-align: center;
 }
 
-p {
-    color: red;
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+.role {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.about {
+    margin: 15px 0;
+}
+
+.about p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.links h2 {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+button a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button a:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 2ms ease;
+}
+
+/* GitHub */
+button:nth-child(1) a {
+    background: #24292f;
+}
+
+/* Instagram */
+button:nth-child(2) a {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+/* Telegram */
+button:nth-child(3) a {
+    background: #0088cc;
+}
+
+
+footer {
+    margin-top: 15px;
+    color: #888;
+    font-size: 13px;
 }
