@@ -94,6 +94,55 @@ button:nth-child(3) a {
     background: #0088cc;
 }
 
+.company-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
+    text-align: center;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 15px;
+}
+.company-card h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.company-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.company-card .btn {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.company-card .btn:hover {
+    background-color: #0077aa;
+    transform: scale(1.05);
+}
 
 footer {
     margin-top: 15px;
